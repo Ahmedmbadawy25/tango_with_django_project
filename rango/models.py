@@ -26,25 +26,3 @@ class Page(models.Model):
     def __str__(self): 
         return self.title
 
-<<<<<<< HEAD
-=======
-class Category(models.Model):
-    name = models.CharField(max_length=128, unique=True)
-    views= models.IntegerField(default=0)
-    likes= models.IntegerField(default=0)
-    class Meta:
-        verbose_name_plural = 'Categories'
-    def __str__(self): 
-        return self.name
-    
-
-class Page(models.Model):
-    category = models.ForeignKey(Category, on_delete=models.CASCADE) 
-    title = models.CharField(max_length=128)
-    url = models.URLField()
-    views = models.IntegerField(default=0)
-
-    def __str__(self): 
-        return self.title
-
->>>>>>> d190ee4b4c84f751e4a72bef2f87a85974532ca7
