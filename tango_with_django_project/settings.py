@@ -29,7 +29,7 @@ SECRET_KEY = 'hf@%$e0tues_u=*tz0xn_dc4s0ozl&^6302uys&j-sur0fb2c$'
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 
 # Application definition
 
